@@ -1,0 +1,148 @@
+#
+# bspwm hotkeys
+#
+
+super + alt + Escape
+	bspc quit
+
+super + shift + c
+	bspc window -c
+
+super + t
+	bspc desktop -l next
+
+super + b
+	bspc desktop -B
+
+super + {t,p,s,f}
+	bspc window -t {tiled,pseudo_tiled,floating,fullscreen}
+  
+super + {grave,Tab}
+	bspc {window,desktop} -f last
+
+super + apostrophe
+	bspc window -s last
+
+super + {o,i}
+	bspc control --record-history off; \
+	bspc window {older,newer} -f; \
+	bspc control --record-history on
+
+super + y
+	bspc window -w last.manual
+
+super + m
+	bspc window -s biggest
+
+super + {_,shift + }{h,j,k,l}
+	bspc window -{f,s} {left,down,up,right}
+
+super + {_,shift + }c
+	bspc window -f {next,prev}
+
+super + {comma,period}
+	bspc desktop -C {backward,forward}
+
+super + bracket{left,right}
+	bspc desktop -f {prev,next}
+
+super + ctrl + {h,j,k,l}
+	bspc window -p {left,down,up,right}
+
+super + ctrl + {_,shift + }space
+	bspc {window -p cancel,desktop -c}
+
+super + alt + {h,j,k,l}
+	bspc window -e {left -10,down +10,up -10,right +10}
+
+super + alt + shift + {h,j,k,l}
+	bspc window -e {right -10,up +10,down -10,left +10}
+
+super + ctrl + {1-9}
+	bspc window -r 0.{1-9}
+
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,window -d} ^{1-9,10}
+
+#~button1
+#	bspc pointer -g focus
+
+super + button{1-3}
+	; bspc pointer -g {move,resize_side,resize_corner}
+
+super + @button{1-3}
+	bspc pointer -u
+
+#
+# wm independent hotkeys
+#
+
+super + Return
+	termite
+
+super + space
+	dmenu_run
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+
+#
+# Screenshot
+#
+
+Print
+    scrot -z -q 100 ~/shots/%Y-%m-%d-%T-screenshot.png
+
+alt + Print
+    scrot -s -z -q 100 ~/shots/%Y-%m-%d-%T-screenshot.png
+
+
+#
+# Modify size of gaps.
+#/
+
+super + a
+    bspc config -d focused window_gap $((`bspc config -d focused window_gap` + 5))
+
+super + d
+    bspc config -d focused window_gap $((`bspc config -d focused window_gap` - 5))
+
+#
+# Misc.
+#
+
+super + shift + s
+    screencast
+
+super + shift + x
+    pkill -f 'x11grab'
+
+super + r
+    dmenu_run -q -i -h 20 -w 1080 -y 0 -x 0 -fn "Fantasque Sans Mono-11:style=Regular" -nb "#151515" -nf "#BA3D4D" -sb "#151515" -sf "#BA3D4D" -p "$"
+
+# Gaps
+super + button{4,5}
+    bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-5,+5}))
+
+# Padding
+super + {shift, } + KP_Up
+    bspc config -d focused top_padding $((`bspc config -d focused top_padding` {-10,+10}))
+
+super + {shift, } + KP_Down
+    bspc config -d focused bottom_padding $((`bspc config -d focused bottom_padding` {-10,+10}))
+
+super + {shift, } + KP_Left
+    bspc config -d focused left_padding $((`bspc config -d focused left_padding` + {-10,+10}))
+
+super + {shift, } + KP_Right
+    bspc config -d focused right_padding $((`bspc config -d focused right_padding` + {-10,+10}))
+
+super + KP_Begin
+    bspc config -d focused top_padding $((`bspc config -m focused top_padding`));\
+    bspc config -d focused bottom_padding $((`bspc config -m focused bottom_padding`));\
+    bspc config -d focused left_padding $((`bspc config -m focused left_padding`));\
+    bspc config -d focused right_padding $((`bspc config -m focused right_padding`))
+
+#
