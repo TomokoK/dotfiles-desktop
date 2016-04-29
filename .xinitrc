@@ -5,10 +5,14 @@
 xsetroot -cursor_name left_ptr &
 
 # Start stuff here
-mpd & compton --config ~/.config/compton.conf & dunst & transmission-daemon & mpdscribble & 
+mpd  & transmission-daemon &
 
 # Start bspwm
 
-feh --bg-scale ~/Pictures/Wallpapers/Tomoko.png &
-sxhkd &
-exec bspwm
+#sxhkd &
+#exec bspwm
+
+# Start Openbox
+
+exec openbox-session
+
