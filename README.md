@@ -1,5 +1,8 @@
-##My collection of dotfiles, updated for my windows 10 rice.
+##My collection of dotfiles as of summer 2020
 
-Remember to set mpd.conf to windows 7 mode
-
-VS is minimal dark by Cleodesktop
+OS: Void Linux
+Shell: ZSH
+WM: Openbox
+Compositor: Picom
+Terminal: urxvt
+Font: tewi

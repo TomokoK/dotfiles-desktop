@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ $EUID > 0 ]]
+	then echo "ERROR: run as root"
+	exit
+fi
+
+packages="/home/asuka/.xbps-restricted-pkgs/packages.list"
+cd /home/asuka/.xbps-restricted-pkgs &&
+sudo -u asuka ./xbps-mini-builder &&
+while IFS= read -r line
+do
+ xbps-install --yes --repository void-packages/hostdir/binpkgs/nonfree/ "$line"
+done < "$packages"

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="system-menu" label="System">
+  <item label="Openbox Configuration Manager">
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Lock">
+    <action name="Execute">
+      <command>i3lock-fancy</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Reboot">
+    <action name="Execute">
+      <command>sudo reboot</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Power Off">
+    <action name="Execute">
+      <command>sudo poweroff</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <separator />
+  <item label="Reconfigure Openbox">
+    <action name="Reconfigure" />
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <separator label="Applications" />
+  <item label="URxvt">
+     <action name="Execute">
+       <command>urxvt</command>
+     </action>
+  </item>
+  <item label="Chrome">
+     <action name="Execute">
+       <command>google-chrome-stable</command>
+     </action>
+  </item>
+  <item label="Pycharm">
+     <action name="Execute">
+       <command>pycharm</command>
+     </action>
+  </item>
+  <item label="Libre Office">
+     <action name="Execute">
+       <command>libreoffice</command>
+     </action>
+  </item>
+  <item label="Steam">
+	  <action name="Execute">
+		  <command>steam</command>
+	</action>
+  </item>
+  <item label="Spotify">
+	  <action name="Execute">
+		  <command>spotify</command>
+	  </action>
+  </item>
+  <item label="Discord">
+	  <action name="Execute">
+		  <command>Discord</command>
+	  </action>
+  </item>
+  <separator label="System" />
+  <menu id="system-menu"/>
+  <separator />
+  <item label="Log Out">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>
