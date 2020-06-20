@@ -7,5 +7,8 @@
 #/home/asuka/.screenlayout/myLayout.sh &
 
 #Start WM
-pulseaudio --daemonize &&
-exec dbus-launch --autolaunch=$(cat /var/lib/dbus/machine-id) openbox-session
+#pulseaudio --daemonize &&
+#exec dbus-launch --autolaunch=$(cat /var/lib/dbus/machine-id) openbox-session
+/home/asuka/.screenlayout/screens.sh &&
+xsetroot -xcf /usr/share/icons/volantes_cursors/cursors/* 32
+exec openbox-session

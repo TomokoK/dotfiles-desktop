@@ -1,7 +1,7 @@
 ## My collection of dotfiles as of summer 2020
 
 
-OS: Void Linux
+OS: Arch Linux
 
 Shell: ZSH
 
@@ -11,4 +11,4 @@ Compositor: Picom
 
 Terminal: urxvt
 
-Font: tewi
+Font: tewi, dina

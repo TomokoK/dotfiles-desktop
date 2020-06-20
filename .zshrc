@@ -13,7 +13,5 @@ compinit
 # End of lines added by compinstall
 
 export PATH=/home/asuka/.bin:$PATH
-alias maim='maim ~/$(date +%s).png'
-export SPICETIFY_INSTALL="/home/asuka/.spicetify-cli"
-export PATH="$SPICETIFY_INSTALL:$PATH"
+alias maim='maim -u ~/$(date +%s).png'
 #alias audacity='env PULSE_LATENCY_MSEC=30 audacity'
