@@ -4,8 +4,6 @@
 # to run user-specific things.
 #
 
-#/home/asuka/.screenlayout/screens.sh &&
-xrdb -merge ~/.Xresources &
 dunst &
 /home/asuka/.config/polybar/launch.sh &
 feh --bg-fill /home/asuka/.wallpapers/invert_bottom.jpg --bg-fill /home/asuka/.wallpapers/invert_top.jpg --bg-fill /home/asuka/.wallpapers/invert_top.jpg --bg-fill /home/asuka/.wallpapers/invert_top.jpg &

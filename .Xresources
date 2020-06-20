@@ -1,4 +1,5 @@
 !! GENERAL
+Xcursor.size: 32
 URxvt.scrollBar: false
 URxvt.saveLines: 8192
 URxvt.internalBorder: 15
