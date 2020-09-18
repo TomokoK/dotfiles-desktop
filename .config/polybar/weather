@@ -5,9 +5,9 @@ import requests
 import datetime
 
 CITY = "6058560" #england is my city
-API_KEY = "CHANGEME"
-UNITS = "Metric"
-UNIT_KEY = "C"
+API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxx" #fill me
+UNITS = "Imperial"
+UNIT_KEY = "F"
 
 REQ = requests.get("http://api.openweathermap.org/data/2.5/weather?id={}&appid={}&units={}".format(CITY, API_KEY, UNITS))
 try:

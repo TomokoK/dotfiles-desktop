@@ -34,7 +34,7 @@
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is, 'Primary' - only on the primary monitor -->
-    <primaryMonitor>1</primaryMonitor>
+    <primaryMonitor>Mouse</primaryMonitor>
     <!-- The monitor where Openbox should place popup dialogs such as the
        focus cycling popup, or the desktop switch popup.  It can be an index
        from 1, specifying a particular monitor.  Or it can be one of the
@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>rounded</name>
+    <name>joy</name>
     <titleLayout>C</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -54,6 +54,7 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
+    <cornerRadius menu="yes">8</cornerRadius>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
@@ -120,10 +121,10 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>3</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>げんさんち</name>
+      <name>Home</name>
       <name>Games</name>
       <name>Misc.</name>
       <name>Misc.</name>
@@ -337,7 +338,7 @@
     </keybind>
     <keybind key="XF86AudioPlay">
       <action name="Execute">
-	<execute>spotify_control playpause</execute>
+        <execute>spotify_control playpause</execute>
       </action>
     </keybind>
     <keybind key="C-S-x">

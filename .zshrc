@@ -14,4 +14,5 @@ compinit
 
 export PATH=/home/asuka/.bin:$PATH
 alias maim='maim -u ~/$(date +%s).png'
+alias realvnc='vncviewer'
 #alias audacity='env PULSE_LATENCY_MSEC=30 audacity'

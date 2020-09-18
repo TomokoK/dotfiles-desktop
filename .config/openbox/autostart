@@ -4,7 +4,8 @@
 # to run user-specific things.
 #
 
+pulseeffects --gapplication-service &
 dunst &
 /home/asuka/.config/polybar/launch.sh &
-feh --bg-fill /home/asuka/.wallpapers/invert_bottom.jpg --bg-fill /home/asuka/.wallpapers/invert_top.jpg --bg-fill /home/asuka/.wallpapers/invert_top.jpg --bg-fill /home/asuka/.wallpapers/invert_top.jpg &
+feh --bg-tile /home/asuka/.wallpapers/ep_naturalblack.png &
 picom -b --config /home/asuka/.config/picom.conf

@@ -17,13 +17,13 @@
   </item>
   <item label="Reboot">
     <action name="Execute">
-      <command>sudo reboot</command>
+      <command>reboot</command>
       <startupnotify><enabled>yes</enabled></startupnotify>
     </action>
   </item>
   <item label="Power Off">
     <action name="Execute">
-      <command>sudo poweroff</command>
+      <command>poweroff</command>
       <startupnotify><enabled>yes</enabled></startupnotify>
     </action>
   </item>
@@ -45,9 +45,9 @@
        <command>google-chrome-stable</command>
      </action>
   </item>
-  <item label="Pycharm">
+  <item label="Realvnc">
      <action name="Execute">
-       <command>pycharm</command>
+       <command>vncviewer</command>
      </action>
   </item>
   <item label="Libre Office">
@@ -67,7 +67,7 @@
   </item>
   <item label="Discord">
 	  <action name="Execute">
-		  <command>Discord</command>
+		  <command>discord</command>
 	  </action>
   </item>
   <separator label="System" />

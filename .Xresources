@@ -22,58 +22,48 @@ urxvt*boldFont: xft:lucy tewi:style=Bold,pixelsize=11,\
 		-mplus-goth_p-bold-*-*-*-*-*-*-*-*-*-*-*,\
 		-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1
 
-!! COLORS
+! COLOR SCHEME
+! black > red > green > yellow > blue > magenta > cyan > white
+#define black0                    #373E4D
+#define black1                    #3B4252
+#define black2                    #434C5E
+#define black3                    #4C566A
+#define red0                      #FA5AA4
+#define red1                      #FA74B2
+#define green0                    #2BE491
+#define green1                    #44EB9F
+#define yellow0                   #FA946E
+#define yellow1                   #FAA687
+#define blue0                     #63C5EA
+#define blue1                     #7ACBEA
+#define magenta0                  #CF8EF4
+#define magenta1                  #D8A6F4
+#define cyan0                     #89CCF7
+#define cyan1                     #A1D5F7
+#define white0                    #EDFEFE
+#define white1                    #E7F7F7
 
-! special
-*.foreground: #DDCCBB
-*.background: #151515
-*.cursorColor: #999999
-*.borderColor: #151515
+*.foreground:                     white0
+*.background:                     black0
+*.cursorColor:                    white0
+*borderColor:			  black0
+!*fading:                          35
+!*fadeColor:                       black2
 
-! black
-!*.color0: #666666
-!*.color8: #999999
-*.color0: #353540
-*.color8: #545466
+*.color0:                         black0
+*.color1:                         red0
+*.color2:                         green0
+*.color3:                         yellow0
+*.color4:                         blue0
+*.color5:                         magenta0
+*.color6:                         cyan0
+*.color7:                         white0
 
-! red
-!*.color1: #C27B83
-!*.color9: #D47C87
-*.color1: #8c5760
-*.color9: #b26f7a
-
-! green
-!*.color2: #99CC66
-!*.color10: #CCFF99
-*.color2: #7b8c58
-*.color10: #9db270
-
-! yellow
-!*.color3: #CC9966
-!*.color11: #FFCC99
-*.color3: #8c6e43
-*.color11: #b28c55
-
-! blue
-!*.color4: #6699CC
-!*.color12: #99CCFF
-*.color4: #58698c
-*.color12: #7086b2
-
-! magenta
-!*.color5: #9966CC
-!*.color13: #CC99FF
-*.color5: #7b5e7d
-*.color13: #9c77b2
-
-! cyan
-!*.color6: #BA3D4D
-!*.color14: #BA3D4D
-*.color6: #66808c
-*.color14: #82a2b2
-
-! white
-!*.color7: #CCCCCC
-!*.color15: #FFFFFF
-*.color7: #8c8b8b
-*.color15: #b8b8c8
+*.color8:                         black3
+*.color9:                         red1
+*.color10:                        green1
+*.color11:                        yellow1
+*.color12:                        blue1
+*.color13:                        magenta1
+*.color14:                        cyan1
+*.color15:                        white1

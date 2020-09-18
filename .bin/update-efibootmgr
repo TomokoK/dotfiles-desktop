@@ -7,10 +7,10 @@ if [[ $EUID > 0 ]]
 	exit
 fi
 
-KERNEL_PARAMS="rw nowatchdog"
+KERNEL_PARAMS="rw quiet loglevel=3"
 
 efibootmgr -b 0000 -B
 
 sleep 3
 
-efibootmgr --disk /dev/sda --part 1 --create --label "Arch Linux" --loader /vmlinuz-linux --unicode 'root=PARTUUID=908d321a-a713-f14d-9884-bf51f54bef18 resume=PARTUUID=089c384e-ab20-614a-825b-5609c2bc10f7 '"$KERNEL_PARAMS"' initrd=\intel-ucode.img initrd=\initramfs-linux.img' --verbose
+efibootmgr --disk /dev/nvme0n1 --part 1 --create --label 'Arch Linux' --loader /vmlinuz-linux --unicode 'root=PARTUUID=f86417e6-212e-214d-92eb-e964fa755f15 resume=PARTUUID=a79648a2-aab4-8a48-879f-8b8c74a2d65a '"$KERNEL_PARAMS"' initrd=\amd-ucode.img initrd=\initramfs-linux.img' --verbose
