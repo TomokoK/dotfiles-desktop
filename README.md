@@ -1,14 +1,14 @@
 ## My collection of dotfiles as of summer 2020
 
 
-OS: Arch Linux
+OS: Arch Linux (in a VM)
 
 Shell: ZSH
 
-WM: Openbox
-
-Compositor: Picom
+WM: openbox-patched
 
 Terminal: urxvt
 
 Font: tewi, dina
+
+GTK: adwaita-dark / Volantes Cursors

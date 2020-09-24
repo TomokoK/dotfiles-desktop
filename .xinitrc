@@ -4,9 +4,7 @@
 
 /home/asuka/.screenlayout/screens.sh
 xrdb /home/asuka/.Xresources
+VBoxClient-all
 xsetroot -xcf /usr/share/icons/volantes_cursors/cursors/left_ptr 32
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
-fcitx &
+imwheel -b 45
 exec openbox-session

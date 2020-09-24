@@ -4,8 +4,7 @@
 # to run user-specific things.
 #
 
-pulseeffects --gapplication-service &
+xrdb ~/.Xresources &
 dunst &
 /home/asuka/.config/polybar/launch.sh &
 feh --bg-tile /home/asuka/.wallpapers/ep_naturalblack.png &
-picom -b --config /home/asuka/.config/picom.conf

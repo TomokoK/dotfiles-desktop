@@ -50,7 +50,7 @@ font-2 = Siji:pixelsize=14;1
 
 modules-left = spotify weather
 modules-center =  
-modules-right = todoist date 
+modules-right = date 
 
 tray-position = 
 tray-padding = 
@@ -68,7 +68,7 @@ tray-padding =
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
 
-monitor = DP-2
+monitor = Virtual1
 
 [module/todoist]
 type = custom/script

@@ -45,20 +45,15 @@
        <command>google-chrome-stable</command>
      </action>
   </item>
-  <item label="Realvnc">
-     <action name="Execute">
-       <command>vncviewer</command>
-     </action>
-  </item>
   <item label="Libre Office">
      <action name="Execute">
        <command>libreoffice</command>
      </action>
   </item>
-  <item label="Steam">
+  <item label="Zoom">
 	  <action name="Execute">
-		  <command>steam</command>
-	</action>
+		  <command>zoom</command>
+	  </action>
   </item>
   <item label="Spotify">
 	  <action name="Execute">
