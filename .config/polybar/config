@@ -70,12 +70,6 @@ tray-padding =
 
 monitor = Virtual1
 
-[module/todoist]
-type = custom/script
-exec = python -u /home/asuka/.config/polybar/polybar-todoist.py
-tail = true
-click-left = xdg-open https://todoist.com
-
 [module/spotify]
 type = custom/script
 interval = 1

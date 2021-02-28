@@ -7,4 +7,4 @@
 xrdb ~/.Xresources &
 dunst &
 /home/asuka/.config/polybar/launch.sh &
-feh --bg-tile /home/asuka/.wallpapers/ep_naturalblack.png &
+feh --bg-tile /home/asuka/.wallpapers/ep_naturalblack.png

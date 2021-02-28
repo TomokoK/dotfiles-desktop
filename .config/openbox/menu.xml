@@ -50,9 +50,14 @@
        <command>libreoffice</command>
      </action>
   </item>
-  <item label="Zoom">
+  <item label="PyCharm">
 	  <action name="Execute">
-		  <command>zoom</command>
+		  <command>pycharm</command>
+	  </action>
+  </item>
+  <item label="TeamSpeak">
+	  <action name="Execute">
+		  <command>teamspeak3</command>
 	  </action>
   </item>
   <item label="Spotify">
