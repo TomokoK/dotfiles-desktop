@@ -55,9 +55,9 @@
 		  <command>pycharm</command>
 	  </action>
   </item>
-  <item label="TeamSpeak">
+  <item label="Xournal++">
 	  <action name="Execute">
-		  <command>teamspeak3</command>
+		  <command>xournalpp</command>
 	  </action>
   </item>
   <item label="Spotify">
