@@ -1,0 +1,10 @@
+systemctl enable vmtoolsd.service
+systemctl enable vmware-vmblock-fuse.service
+pacman -S --needed base-devel git
+cd /tmp/
+git clone https://aur.archlinux.org/pikaur.git
+cd ./pikaur/
+makepkg -fsri
+touch /etc/X11/Xwrapper.config
+echo 'needs_root_rights=yes' >> /etc/X11/Xwrapper.config
+vmware-toolbox-cmd timesync enable
