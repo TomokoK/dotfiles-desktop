@@ -797,9 +797,14 @@
 
     <maximized>true</maximized>
     # 'Horizontal', 'Vertical' or boolean (yes/no)
-  </application>
-
   # end of the example
--->
+    -->
+	<application name='xournalpp'>
+		<maximized>no</maximized>
+		<size>
+			<height>96%</height>
+			<width>30%</width>
+		</size>
+	</application>
   </applications>
 </openbox_config>
